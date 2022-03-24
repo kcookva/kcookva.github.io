@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.88.1">
+    <title>Φ</title>
+
+    <link rel="canonical" href="index.html">
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+<link href="https://getbootstrap.com/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="https://getbootstrap.com/docs/5.1/examples/cover/cover.css" rel="stylesheet">
+  </head>
+  <body class="d-flex text-center text-white bg-dark">
+    
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+  <header class="mb-auto">
+    <div>
+      <h3 class="float-md-start mb-0">ଘ(੭*ˊᵕˋ)੭* ̀ˋ ɪɴᴛᴇʀɴᴇᴛ</h3>
+      <nav class="nav nav-masthead justify-content-center float-md-end">
+        <a class="nav-link" aria-current="page" href="index.html#">Home</a>
+        <a class="nav-link active" href="projects.html">Projects</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="px-3">
+    <div class="p-5"></div>
+    <ul style="list-style-type: none;" class="mx-auto">
+      <div class="panel panel-default">
+        <div class="panel-heading"><h4> 03.24.2022 -- Testing Client Side Latex (just for fun)</h4></div>
+        <hr></hr>
+        <div class="panel-body">
+          <p>
+              \[x = {-b \pm \sqrt{b^2-4ac} \over 2a}\]
+              <br></br>
+              \[\begin{matrix}
+                1 & 2\\
+                3 & 4
+                \end{matrix}\]
+                <br></br>
+                \[\zeta(s) = \sum_{n=1}^{\infty} \frac{1}{n^s}\]
+                <br></br>
+                \[\frac{d}{dx} e^x: \]
+                \[\frac{d}{dx} ln(x) = 1/x = \frac{d}{dx}x = 1 \]
+                \[\frac{d}{dx}ln(e^x) = \frac{d}{du}ln(u)\frac{d}{du}e^x = \frac{1}{u} \frac{d}{dx}e^x = \frac{1}{e^x}\frac{d}{dx}e^x = 1 \]
+                \[\therefore \]
+                \[\frac{d}{dx}e^x = e^x \]
+
+          </p>
+        </div>
+      </div>
+
+      <div class="p-5">
+        <div class="panel panel-default">
+          <div class="panel-heading"><h4> 03.24.2022 -- Planning DPFI to MPFI for my 1989 Honda Civic </h4></div>
+          <hr></hr>
+          <div class="panel-body">
+            All internally combusted engines need some form of fuel being brought into the ratio of air. This is universally known as the stoichiometric equivalent within engines. This ratio says for every 14.7 lbs of air there needs to be exactly 1 lb of fuel to achieve maximum combustion efficiency. Around the late 80's Honda Motor Co. decided to release their new method fuel injection for the Civic which intended to replace the de facto carbuerated fuel injection systems. This was called PGM-FI or Programmable Fuel Injection, and it essentially paved the way for computer controlled automobiles to dominate the market due to their exponentially more precise control of automobile hardware. This overall form of fuel injection is known within all cars that have it as EFI (Electronic Fuel Injection), which works in conjection with the vehicle's Engine Control Module (or Unit) to ensure the most efficient ratio is being sought after. This is done with some very complicated programming typically represented in a language called Assembly. 
+            (For reference <a href="https://riptutorial.com/assembly/example/10682/hello-world-for-linux-x86-64--intel-64-bit-">this</a>  is a Hello World program in Assembly).
+
+            <br></br>
+
+            The documentation of this project luckily does not involve any Assembly programming (yet) and that is far for the better. One simple byte of memory within a car's ECU could mean your intake manifold melting into goo, and especially with gas prices currently it's probably best to not tinker with fuel maps without absolutely knowing what you're doing (like 110%). All this project does is actually take the two current fuel injectors I have and replaces them with the usual 1 per intake runner. Since my car's engine was the first generation of PGM-FI within a Civic, significantly more efficient means of injection have been developed and tested for decades within the DIY community. Technically speaking this modification yields one of the best return on investments for a car. Results have varied throughout different models but I'm expecting about a 15-20 horsepower increase throughout the entire powerband, along with improved fuel economy (hopefully 40+ mpg). Most people seriously modding their Honda will opt to go OBD-1 since it's supported by so many tuners, but for the older 4th gen Civics like mine there was only OBD-0 or Pre-OBD and it tends to be more cost effective to stay the same protocol.
+
+            <br></br>
+
+            Parts list (staying OBD-0):
+            <ul>
+              <li> One working OBD-0 ECU (PM6 for manual & PS9 for auto) </li>
+              <li> A spool of 18AWG wire/heatshrink </li>
+              <li> Solder and soldering gun </li>
+              <li> Extra ECU pins (I would recommend cutting the ECU harness with the ECU if you can) </li>
+              <li> OBD-0 Ignition Distributor </li>
+              <li> MPFI Intake Manifold </li>
+              <li> OBD-0 Injectors/Injector plugs </li>
+              <li> OBD-0 Resistor Box </li>
+              <li> (Optional) Civic SI Throttle Cable </li>
+              <li> Likely an SI intake tube (OEM airbox should fit) </li>
+            </ul>
+            <br></br>
+            Depending where the parts are sourced from this entire swap should be less than $300 (that's about $15/hp!)
+          </div>
+        </div>
+      </div>
+
+    </ul>
+  </main>
+
+  <footer class="mt-auto text-white-50">
+	  802.557.4154 || kcookva@gmail.com
+  </footer>
+  <div class="pb-5"></div>
+</div>
+
+
+    
+  
+
+</body>
+</html>
